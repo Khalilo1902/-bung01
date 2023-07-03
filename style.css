@@ -13,6 +13,7 @@ header {
   background-size: cover;
   position: fixed;
   inset: 0 0 auto 0;
+  z-index: 10;
 }
 
 h1 {
@@ -21,6 +22,7 @@ h1 {
   top: 8rem;
   font-family: Roboto;
   opacity: 0.3;
+  font-size: clamp(1.5rem, 2.5vw, 4rem); 
 }
 main {
   margin-top: 21rem;
@@ -61,6 +63,46 @@ p::after {
   font-size: 1.5rem;
   font-family: "FontAwesome";
   color: blue;
-  
-  
+}
+form {
+  margin: 1rem;
+}
+legend {
+  font-size: 3rem;
+}
+fieldset {
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.row {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 1rem;
+}
+.row label {
+  display: block;
+  width: 100px;
+}
+.row input:focus,
+textarea:focus {
+  background-color: rgb(239, 138, 5);
+  outline: 1px solid rgb(65, 6, 241);
+  border: none;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  background-color: #d8d8d8;
+}
+.buttonRow {
+  margin-bottom: 1rem;
+}
+
+::placeholder {
+  color: rgb(248, 180, 180);
 }
