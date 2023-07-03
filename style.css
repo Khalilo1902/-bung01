@@ -13,9 +13,6 @@ header {
   background-size: cover;
   position: fixed;
   inset: 0 0 auto 0;
- 
-  
-  
 }
 
 h1 {
@@ -23,9 +20,47 @@ h1 {
   right: 2rem;
   top: 8rem;
   font-family: Roboto;
-  opacity: .3;
+  opacity: 0.3;
 }
-main{
-    margin-top: 20rem;
-    
+main {
+  margin-top: 21rem;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  width: 300px;
+  aspect-ratio: 1/1;
+  border-radius: 10%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #eee;
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  max-width: 360px;
+  position: relative;
+}
+.card p {
+  text-align: left;
+  line-height: 1.8rem;
+  /* display: block; */
+}
+
+p::after {
+  margin-left: 1rem;
+  content: "\f35d";
+  font-size: 1.5rem;
+  font-family: "FontAwesome";
+  color: blue;
+  
+  
 }
