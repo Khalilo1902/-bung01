@@ -22,7 +22,7 @@ h1 {
   top: 8rem;
   font-family: Roboto;
   opacity: 0.3;
-  font-size: clamp(1.5rem, 2.5vw, 4rem); 
+  font-size: clamp(3rem, 8vw, 6rem); 
 }
 main {
   margin-top: 21rem;
